@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2019-12-18T08:31:54.997Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="VdoHzMBxB6gzXAYPLEhi" version="12.4.2" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-18T08:47:11.922Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="gCGe0Mw6Q_Tz4eYHMSQK" version="12.4.2" type="github" pages="1">
   <diagram id="aLO9t9GviOjZu6mZyf2K" name="Page-1">
-    <mxGraphModel dx="4047" dy="2367" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3711" dy="2186" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -90,9 +90,6 @@
         </mxCell>
         <mxCell id="sVq2AswCTDiIawETPMpB-16" value="prewrite" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-320" y="445" width="141" height="75" as="geometry"/>
-        </mxCell>
-        <mxCell id="sVq2AswCTDiIawETPMpB-17" value="commit" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-650" y="-330" width="130" height="75" as="geometry"/>
         </mxCell>
         <mxCell id="sVq2AswCTDiIawETPMpB-18" value="rollback" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-440" y="-315" width="120" height="60" as="geometry"/>
