@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2019-12-18T06:29:59.378Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="wxKW-pnYRn9gkqVYSDiV" version="12.4.2" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-18T06:57:30.948Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="T6EK3VkC32F74s9wnXSj" version="12.4.2" type="github" pages="1">
   <diagram id="aLO9t9GviOjZu6mZyf2K" name="Page-1">
-    <mxGraphModel dx="3356" dy="1994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4047" dy="2367" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -260,8 +260,8 @@
         <mxCell id="sVq2AswCTDiIawETPMpB-88" value="&lt;h1&gt;Router&lt;/h1&gt;&lt;div&gt;1.获取 key 属于哪一个 region&lt;/div&gt;&lt;div&gt;2.加入缓存后给 region leader peer 发送命令&lt;/div&gt;&lt;div&gt;3.region leader peer 漂移到其他则返回错误，然后带上新的地址，更新 cache，重新发送&lt;/div&gt;&lt;div&gt;4.如果分裂后，key 所属的 region 变了则重新从 1 开始&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="1">
           <mxGeometry x="1230" y="650" width="190" height="170" as="geometry"/>
         </mxCell>
-        <mxCell id="sVq2AswCTDiIawETPMpB-90" value="&lt;h1&gt;Columes&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="770" y="-5" width="190" height="120" as="geometry"/>
+        <mxCell id="sVq2AswCTDiIawETPMpB-90" value="&lt;h1&gt;Columes families&lt;/h1&gt;&lt;p&gt;default 中存放数据&amp;nbsp; &amp;nbsp;key_ts&amp;nbsp; value&lt;/p&gt;&lt;p&gt;raft&amp;nbsp; 中存放 raftkv 的 log&lt;br&gt;lock 中存放事务的锁的信息 key&amp;nbsp; ts,lock_type,primary_key&lt;/p&gt;&lt;p&gt;write 中存放事务的 commit 信息 key_ts&amp;nbsp; &amp;nbsp;start_ts&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="803" y="-5" width="317" height="135" as="geometry"/>
         </mxCell>
         <mxCell id="sVq2AswCTDiIawETPMpB-92" value="" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="790" y="180" width="80" height="340" as="geometry"/>
@@ -280,6 +280,12 @@
         </mxCell>
         <mxCell id="sVq2AswCTDiIawETPMpB-99" value="default" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="1">
           <mxGeometry x="1125" y="150" width="50" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="sVq2AswCTDiIawETPMpB-101" value="" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="180" width="80" height="340" as="geometry"/>
+        </mxCell>
+        <mxCell id="sVq2AswCTDiIawETPMpB-102" value="raft" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1301" y="150" width="30" height="20" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
