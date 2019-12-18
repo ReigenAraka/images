@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-18T07:54:38.632Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="HEtZw-_3npRSOhi9HKDH" version="12.4.2" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-18T08:31:54.997Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="VdoHzMBxB6gzXAYPLEhi" version="12.4.2" type="github" pages="1">
   <diagram id="aLO9t9GviOjZu6mZyf2K" name="Page-1">
     <mxGraphModel dx="4047" dy="2367" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -98,13 +98,13 @@
           <mxGeometry x="-440" y="-315" width="120" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="sVq2AswCTDiIawETPMpB-19" value="&lt;h1&gt;乐观事务&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(62 , 62 , 62) ; font-family: , &amp;#34;blinkmacsystemfont&amp;#34; , &amp;#34;segoe ui&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , &amp;#34;segoe ui symbol&amp;#34; ; font-size: 16px ; background-color: rgb(255 , 255 , 255)&quot;&gt;写入会缓存到一个 buffer 中，直到最终提交时数据才会被写入到 TiKV；而一个事务又应当能够读取到自己进行的写操作，因而一个事务中的读操作需要首先尝试读自己的 buffer，如果没有的话才会读取 TiKV。&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-540" y="-735" width="190" height="220" as="geometry"/>
+          <mxGeometry x="-460" y="-150" width="190" height="220" as="geometry"/>
         </mxCell>
         <mxCell id="sVq2AswCTDiIawETPMpB-27" value="scheduler" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-50" y="290" width="120" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="sVq2AswCTDiIawETPMpB-28" value="&lt;h1&gt;Scheduler&lt;/h1&gt;&lt;p&gt;scheduler 用来进行调度与流量控制&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-260" y="-750" width="190" height="120" as="geometry"/>
+          <mxGeometry x="70" y="-210" width="190" height="120" as="geometry"/>
         </mxCell>
         <mxCell id="sVq2AswCTDiIawETPMpB-29" value="async_prewrite" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-294.5" y="445" width="90" height="30" as="geometry"/>
@@ -246,7 +246,7 @@
           <mxGeometry x="-230" y="970" width="120" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="sVq2AswCTDiIawETPMpB-76" value="commit" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="-294.5" y="720" width="120" height="60" as="geometry"/>
+          <mxGeometry x="-309.5" y="660" width="120" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="sVq2AswCTDiIawETPMpB-78" value="router" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="-70" y="970" width="120" height="60" as="geometry"/>
@@ -261,7 +261,7 @@
           <mxGeometry x="1230" y="650" width="190" height="170" as="geometry"/>
         </mxCell>
         <mxCell id="sVq2AswCTDiIawETPMpB-90" value="&lt;h1&gt;Columes families&lt;/h1&gt;&lt;p&gt;default 中存放数据&amp;nbsp; &amp;nbsp;key_ts&amp;nbsp; value&lt;/p&gt;&lt;p&gt;raft&amp;nbsp; 中存放 raftkv 的 log&lt;br&gt;lock 中存放事务的锁的信息 key&amp;nbsp; ts,lock_type,primary_key&lt;/p&gt;&lt;p&gt;write 中存放事务的 commit 信息 key_ts&amp;nbsp; &amp;nbsp;start_ts&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="330" width="317" height="135" as="geometry"/>
+          <mxGeometry x="1020" y="240" width="317" height="135" as="geometry"/>
         </mxCell>
         <mxCell id="sVq2AswCTDiIawETPMpB-93" value="Lock" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="1">
           <mxGeometry x="710" y="195" width="40" height="20" as="geometry"/>
@@ -298,6 +298,18 @@
             <mxPoint x="334.59000000000003" y="553" as="sourcePoint"/>
             <mxPoint x="514.59" y="593" as="targetPoint"/>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="sVq2AswCTDiIawETPMpB-112" value="key_111" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="320" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="sVq2AswCTDiIawETPMpB-113" value="test" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="833.5" y="320" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="sVq2AswCTDiIawETPMpB-115" value="key" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="770" y="200" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="sVq2AswCTDiIawETPMpB-116" value="111,lock" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="818.5" y="200" width="70" height="20" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
